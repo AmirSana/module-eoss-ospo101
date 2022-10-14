@@ -158,9 +158,7 @@ Once your company is successfully using open source software in products or serv
 
 **Contributor**
 
-As your company’s participation increases and you begin contributing code to an open source project, you need to selectively engage with targeted projects and communities to drive your
-
-company’s needs. Contributing to strategic open source projects can help your organization gain additional value as code contributions can help shape future features in the project that meet a company’s needs.
+As your company’s participation increases and you begin contributing code to an open source project, you need to selectively engage with targeted projects and communities to drive your company’s needs. Contributing to strategic open source projects can help your organization gain additional value as code contributions can help shape future features in the project that meet a company’s needs.
 
 Here are the necessary components of the open source contribution strategy:
 
@@ -182,9 +180,7 @@ The final step in the open source strategy ladder is leadership. This scenario b
 
 Leadership roles in existing open source communities are earned by establishing trust with the project members and by maintaining a high level of continuous contribution to the project.
 
-This scenario requires significant investment in targeted open source communities and consortia
-
-to establish a leadership agenda. Here are the necessary components of the open source leadership strategy:
+This scenario requires significant investment in targeted open source communities and consortia to establish a leadership agenda. Here are the necessary components of the open source leadership strategy:
 
 - Increase engagement with targeted open source communities
 
@@ -242,7 +238,7 @@ While we’ll cover security and keeping up-to-date with new open source release
 
 **Money**
 
-In the Open Source Introduction course, we briefly covered that open source may be ‘free’ from a licensing cost, but by no means does that mean that it doesn’t have other costs associated with it.
+In the Open Source Introduction module, we briefly covered that open source may be ‘free’ from a licensing cost, but by no means does that mean that it doesn’t have other costs associated with it.
 
 Effectively participating in open source, whether simply consuming it effectively and strategically, or driving a particular standard costs money, primarily in the staffing area. You don’t need to start with a giant staff (more on that later), but you should be considering the needs you’ll have both in terms of software engineers and support staff (legal, business, project management) as you begin to put policies into place to help govern your organization’s open source efforts.
 
@@ -352,7 +348,7 @@ It’s important to engage all levels of the organization in developing these di
 
 ### Review & Approval
 
-No matter how careful or diligent your discovery process, the real test faced by open source code must come from your review and approval processes. Approval and review are your first lines of defense against security, legal and operational risk that can accompany open source.
+No matter how careful or diligent your discovery process, the real test faced by open source code must come from your review and approval processes. Review and approval are your first lines of defense against security, legal and operational risk that can accompany open source.
 
 As with discovery, leveraging previously-vetted code can speed up this process, so if your open source team has not already done so, best practices dictate creating lists of approved components and versions, reviewed and approved license types, and previously-employed evaluation rationale and results.
 
@@ -471,7 +467,7 @@ Additionally, building out the necessary process infrastructure for such heavywe
 
 ### Section Overview
 
-In this section, we will discuss the role that the Open Source Program Office (OSPO) plays in helping define strategy, implementing associated policies, and guiding an organization's involvement in open source. There will be a more detailed coverage of how to set up and run an OSPO in a later course in this series.
+In this section, we will discuss the role that the Open Source Program Office (OSPO) plays in helping define strategy, implementing associated policies, and guiding an organization's involvement in open source. There will be a more detailed coverage of how to set up and run an OSPO in a later module in this series.
 
 ### Learning Objectives
 

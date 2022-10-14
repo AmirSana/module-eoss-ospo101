@@ -20,7 +20,7 @@ By the end of this section, you should be able to:
 
 As mentioned in the introductory text above, an Open Source Program Office (OSPO) is intended to be the central nexus of your organization’s work with open source.  However, that definition leaves (on purpose) a lot of room for variability.  Some might say that diminishes the value, but, in fact, the fact that OSPO’s can and do look different depending upon your organization is actually a strength, as it lets you mold this construct (and change it frequently) to address a variety of needs you’ll likely have on your open source journey.
 
-For example, some organization’s have the majority of their upstream open source work happening within their OSPO by specific developers working on behalf of the organization to get changes required for product enablement into open source projects.  However, in some organizations, those developers are decentralized and embedded within product development teams and are advised and trained by OSPO personnel.
+For example, some organizations centralize the majority of their upstream open source work inside their OSPO, which authorizes specific developers to work on behalf of the organization and propose upstream project changes required for downstream product enablement.  However, in some organizations, those developers are decentralized and embedded within product development teams and are advised and trained by OSPO personnel.
 
 There is no ‘one-size-fits-all’ model, and an OSPO can be anything from highly-centralized with a large set of resources, to small and decentralized, relying on influence and training of resources throughout the organization.  A great overview resource for what an OSPO is can be found in the work of the TODO Group in their [github repository](https://github.com/todogroup/ospodefinition.org).
 
@@ -282,11 +282,11 @@ Comcast’s involvement in open source was a gradual process that evolved over t
 
 Comcast began contributing to open source around 2006 when Jon Moore, Chief Software Architect, made a patch contribution to Apache HTTP. He showed the management team that it was more cost effective to have the patch incorporated into the main project than it was to maintain it separately.
 
-Working with an interdisciplinary team, Moore worked to set up an open source advisory council, which consisted of legal and technical subject matter experts. They reviewed contributions and created internal guidelines focused on good open source practices and community building. In 2013, when they started tracking these contributions, they had 13. This year, they plan to do almost 10x that.
+Working with an interdisciplinary team, Moore worked to set up an open source advisory council, which consisted of legal and technical subject matter experts. They reviewed contributions and created internal guidelines focused on good open source practices and community building. In 2013, when they started tracking these contributions, they had 13. They had plans to do almost 10x more of that in 2017.
 
 *"When companies establish open source practices they send a big message saying that we’re serious about open source and that we want to invest in it."* – Nithya Ruff, Senior Director Open Source Practice at Comcast.
 
-### Six C’s of Open Source Program Practice
+#### Six C’s of Open Source Program Practice
 
 In 2016, Comcast hired Ruff to lead an increasingly vital open source strategy. The practice has support from the highest levels of the Comcast leadership team who wanted an organization that would field questions, educate employees, and create awareness.
 
@@ -300,7 +300,7 @@ The open source practice has two main goals.
 
 2. Be visible externally in open source and technology communities. Many people don’t know that Comcast is a technology company with thousands of developers so they want to raise awareness and share what they’re doing.
 
-### Open Source Contributions
+#### Open Source Contributions
 
 Comcast has [open sourced a few projects](https://github.com/Comcast) in addition to contributing significantly to existing open source communities, like OpenStack. [Apache Traffic Control](https://trafficcontrol.incubator.apache.org/) was started within Comcast and has been contributed to the Apache Software Foundation where it is currently in incubation.
 
@@ -314,7 +314,7 @@ In addition to contributing to projects, Comcast is also a member of a number of
 
 Through these contributions, Comcast has benefited from the goodwill that comes from participating in open source communities. Comcast’s contributions have also helped the company recruit new developers. Developers today want to work for companies that are good open source citizens, and Comcast’s contributions in a variety of communities demonstrate that they are serious about their commitment to open source.
 
-### Aligning with the Business
+#### Aligning with the Business
 
 > "The establishment of the practice, visible engagement at the foundation level, increased contributions, leadership support, and tooling support as a company have made it easy to do open source." – Nithya Ruff, Senior Director Open Source Practice at Comcast.
 
@@ -326,17 +326,17 @@ Microsoft is now an accepted big player in the open source space, but just a few
 
 > "Despite perception, Microsoft has been doing open source for quite a while. At first, it was experimental pieces here and there but about six years ago, in 2011, we brought much of that into focus in an entity called Microsoft Open Technologies," explained Jeff McAffer, Director of Open Source Programs Office at Microsoft.
 
-### Open Source in Earnest
+#### Open Source in Earnest
 
 That’s when the exploration of what Microsoft could do with open source began in earnest, McAffer said. In the early days, if anyone in the company was interested in doing anything with open source, they came to the centralized group for assistance from the open source developers, contributors, and maintainers involved.
 
-About three years ago, things began to change. Microsoft decided to make open source pervasive throughout the company and rolled open source into the main engineering groups.
+Around the year 2014, things began to change. Microsoft decided to make open source pervasive throughout the company and rolled open source into the main engineering groups.
 
 > "If that’s all we had done, we would have left an untenable vacuum around how we do open source," said McAffer. “Someone has to think about policy and how all the open source efforts would be coordinated, the processes and tools they would use, how would we keep track of projects, etc. So, we created what is now known as the Open Source Programs Office to handle all those issues.”
 
 Some of the technical people from the earlier open source group moved to the newly formed program office, while the others joined engineering groups pertinent to their work. It turned out that Microsoft needed additional talent to make sure all projects and processes were fully manned, and so recruitment efforts, both internally and externally, were soon under way. Today, open source is a thriving part of Microsoft’s global works.
 
-### Business and Programmatic Goals
+#### Business and Programmatic Goals
 
 Microsoft does not have a central open source strategy or a central approval body. Instead, the Open Source Programs Office facilitates those discussions and decisions throughout the company. Teams still need to have their open source engagement reviewed, but it is done more locally.
 
@@ -344,7 +344,7 @@ Microsoft does not have a central open source strategy or a central approval bod
 
 > "We defer most of those decisions and directions to the local management, but we give them a structure in which to think about those decisions and directions. We do have central policies about how we manage IP and what we do about security issues. We give them tools and processes that embody those policies to make it super simple for them to execute in a coherent yet specific way."
 
-### The Tools to Manage
+#### The Tools to Manage
 
 Microsoft’s policies boil down into processes that then are tooled accordingly to handle the workload. One example is open source releases. As a matter of policy, releases are made on GitHub.
 
@@ -366,7 +366,7 @@ GHTorrent helps Microsoft understand what’s going on at GitHub but also intern
 
 The company ended up creating another system called [GHCrawler](https://github.com/microsoft/ghcrawler) , which it also open sourced. This tool tracks everything on GitHub down to the commit level, team, and permissions changes. That data is then used in metrics and tracking analysis to discover insights such as how many pull requests are coming in, how fast they are getting action, and how long they take to close or merge. "It gives us a way of tracking our presence," said McAffer.
 
-### Simplifying Open Source Use
+#### Simplifying Open Source Use
 
 Consumption of open source is an entirely different matter, and a different process, at Microsoft. The company uses open source in myriad ways, and the need to track them all and to manage the legal security aspects is enormous.
 
@@ -386,7 +386,7 @@ Salesforce learned early on that open source projects stay healthy when they hav
 
 Salesforce stays focused on this concept of cultivating diverse interests to use and participate in its projects. At the same time, it’s equally focused on aligning its internal stakeholders – from engineering to legal, marketing and PR – with its open source efforts.
 
-### Open Source Program Goals
+#### Open Source Program Goals
 
 Salesforce has many priorities around open source. The company’s open source strategy keeps everyone aligned. The dedicated open source program team circulates internal documents to the company’s engineering team that provide strategic guidance and encourage the creation and use of open source. The documents provide the foundation for an open source culture and let the team know in no uncertain terms that the company’s leaders are fully behind the strategy.
 
@@ -394,7 +394,7 @@ Open source is increasingly a part of just about every software project in every
 
 Salesforce is a Software-as-a-service vendor, and doesn’t release the end customer-facing products that it sells as open source. Instead, the engineering team focuses on open sourcing shared infrastructure components, libraries, and tools that other companies might find generally useful, as well as samples, and SDKs that are of benefit to their customers.
 
-### Measuring Open Source Success
+#### Measuring Open Source Success
 
 One goal of the company’s open source program is building its reputation among developers. Engineers who may not use Salesforce products will sometimes look at the company’s open source projects and say, "Hey, this company is really involved with some great stuff," Varley said.
 
@@ -406,13 +406,13 @@ The open source program also focuses on expanding the communities that align beh
 
 Salesforce also measures its own success against the industry-wide success of open source. The more progress there is in open source, in all of its many dimensions, the better off everyone is because more open source means more progress in the industry as a whole. If Salesforce can raise the baseline of what is commodity software and what constitutes shared components that everybody can depend on, the whole industry benefits.
 
-### Apache Phoenix
+#### Apache Phoenix
 
 Apache Phoenix is an open source big data analytics platform that’s now part of the Apache Software Foundation. But when Phoenix started, it was just a project a couple of Salesforce engineers built for some specific internal use cases. But, before long, the small team realized that anybody could benefit from the project and its velocity would improve if the whole world was working on it. So they made the pitch to open source it and turn it into a community project.
 
 Within the first year of creating the open source Phoenix project, the Salesforce engineers started getting significant contributions in functionality from two or three big companies that had found Phoenix and wanted to join the project. By opening the project up to outside use and contribution, the Phoenix project progressed far beyond what the original engineers would have been able to do on their own.
 
-### 5 Key Lessons
+#### 5 Key Lessons
 
 Looking back at his 4 years of experience managing open source at Salesforce, Varley has five key lessons for companies that may just be getting started with their own open source programs:
 

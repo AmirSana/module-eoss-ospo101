@@ -378,7 +378,7 @@ The whole process of continuous delivery and continuous deployment can be deline
 
 1. **Continuous Integration**
 
-Changes are to be merged into the main branch (“master”) as often as possible. Automated builds** **are run on as many variations of software and hardware as possible. Conflicts are resolved as soon as they arise. 
+Changes are to be merged into the main branch (“master”) as often as possible. **Automated builds** are run on as many variations of software and hardware as possible. Conflicts are resolved as soon as they arise. 
 
 2. **Continuous Testing/Delivery**
 
@@ -407,7 +407,7 @@ Obviously, nothing comes for free in software development, so it’s important t
 #### Costs
 
 *   Changes have to be merged very often, probably at least once a day, putting a possible strain on developers. 
-*   The repository must be monitored by a continuous integration server** **which runs scripted automation tests every time contributions are made. Staff has to be allocated to do this. 
+*   The repository must be monitored by **a continuous integration server**, which runs scripted automation tests every time contributions are made. Staff has to be allocated to do this. 
 *   Scripts and other tools have to be run to perform automated tests and report their results and take appropriate actions. It can be a lot of work to prepare this infrastructure. 
 
 #### Benefits
@@ -430,9 +430,7 @@ Here are some of the most often utilized tools:
 *   Travis - [https://travis-ci.org/](https://travis-ci.org/)
 *   Github Integrity - [http://integrity.github.io/](http://integrity.github.io/)
 
-One thing to keep in mind is that there are always new tools being developed, so it’s a good idea to check 
-
-Google and/or discuss with other developers what tools for continuous integration they are using.
+One thing to keep in mind is that there are always new tools being developed, so it’s a good idea to check Google and/or discuss with other developers what tools for continuous integration they are using.
 
 ### The Continuous Delivery Foundation
 
@@ -440,7 +438,7 @@ Another way of keeping up with the latest in continuous delivery is to take a lo
 
 By establishing and documenting best practices, working out guidelines and making training available, the goal is to evangelize and spread CI/CD and DevOps practices and improve product release processes. 
 
-The founding projects** **are: 
+**The founding projects** are: 
 
 *   **Jenkins**: an OSS CI/CD system 
 *   **Jenkins X**: Jenkins for Kubernetes

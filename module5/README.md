@@ -192,7 +192,7 @@ You should also consider the following common properties:
 - Able to hold liable for damages?
 - Scope of license: work as a whole or only specific file?
 
-The list on the page contains some common questions you should understand the answer to before making your code public, and choose a license that reflects your answers. This is sometimes a scary task, but in the last couple of years, there have been websites created to help with this, which are listed on the next screen.
+The list on the page contains some common questions you should understand the answer to before making your code public, and choose a license that reflects your answers. This is sometimes a scary task, but in the last couple of years, there have been websites created to help with this, which are listed on the next chapter.
 
 ### License Help Resources
 
@@ -368,6 +368,7 @@ Relevant terms include:
 - Pasting
 - Adapting
 - Inserting
+- Embedding
 
 ![Incorporation](incorporation.png)
 
@@ -459,7 +460,7 @@ When analyzing your open source usage, you'll need to gather information about t
 - Status of the community around the package (activity, diverse membership, responsiveness)
 - Version
 - Download or source code URL
-- Copyright owner
+- Copyright owner(s)
 - License and License URL
 - Attribution and other notices and URLs
 - Description of modifications intended to be made
@@ -807,7 +808,7 @@ While it is hoped that your organization will practice good coding and engineeri
 - But also other files are valuable: scripts, icons, images, css files
 - Small sections of code copied from Web sites for best practices and snippets is easier
 
-Copying and paste of source code from the Internet in your code can be done, as reuse is generally better than reinventing the wheel each time. However, it's important to respect the author's interests by observing any licensing or copyright obligations
+Copying and paste of source code from the Internet in your code can be done, as reuse is generally better than reinventing the wheel each time. However, it's important to respect the author's interests by observing any licensing or copyright obligations.
 
 ### Outbound Software
 
@@ -837,13 +838,13 @@ For example, some licenses are not compatible, such as the GNU Public License (G
 
 In addition, even with tooling, some license statements are ambiguous, for example "Licensed under BSD". In cases like this, it's important to involve your legal team and stakeholders in determining how to proceed.
 
-### Bill of Materials (BOM)
+### Software Bill of Materials (SBOM)
 
-One of the most critical things that code scanning or compliance tooling can provide is a programmatic way of determining what is in the software or product that you are shipping. This is in the form of a Bill of Materials (BOM).
+One of the most critical things that code scanning or compliance tooling can provide is a programmatic way of determining what is in the software or product that you are shipping. This is in the form of a Software Bill of Materials (SBOM).
 
-A BOM provides a detailed account of what is in a software package delivery, including identifying how much of that software package consists of open source components and which licenses are in use for those components.
+An SBOM provides a detailed account of what is in a software package delivery, including identifying how much of that software package consists of open source components and which licenses are in use for those components.
 
-The [Software Package Data Exchange (SPDX)](https://spdx.org) project specifies one implementation of how to express a Bill of Materials.
+The [Software Package Data Exchange (SPDX)](https://spdx.org) project specifies one implementation of how to express a Software Bill of Materials.
 
 ### Tool Support Summary
 
@@ -873,7 +874,7 @@ We'll cover each of these areas in the following pages.
 
 Since organizations have access to their own source code, as well as the open source packages used to build their products, source code scanning tools are some of the most widely used tools in compliance.
 
-There are many commercial tools (and some open source ones) available that perform this function. In general, these tools rely on "hashing" fingerprints of existing open source code bases (or, potentially internal components if added to the scanning database) to make a determination of what software components are part of a distribution. One of their biggest advantages is in building the Bill of Materials (BOM) we mentioned earlier.
+There are many commercial tools (and some open source ones) available that perform this function. In general, these tools rely on "hashing" fingerprints of existing open source code bases (or, potentially internal components if added to the scanning database) to make a determination of what software components are part of a distribution. One of their biggest advantages is in building the Software Bill of Materials (SBOM) we mentioned earlier.
 
 Some scanning tools can also identify "code snippets", which is often helpful when determining if "copy and pasted" code from a particular open source package was used. However, snippet scanning comes at a price - it will often take longer to run a full snippet scan analysis on source code rather than just relying on hashed fingerprints.
 
@@ -889,7 +890,7 @@ While we are covering license scanning tools as a separate item, in practice, mo
 
 License scanning relies on searching source code for relevant keywords, and/or machine readable markers (such as SPDX blocks) to determine the relevant licenses attached to each file or package. These scans can also identify copyright, author statements and sometimes acknowledgements.
 
-While the database of open source licenses isn't as large as the database of open source components required to build a component identification piece in the BOM, it still does require access to a knowledge base of existing open source licenses. In general, license scanning has a harder time identifying non-OSS licenses, as there are a larger variety of these types of licenses.
+While the database of open source licenses isn't as large as the database of open source components required to build a component identification piece in the SBOM, it still does require access to a knowledge base of existing open source licenses. In general, license scanning has a harder time identifying non-OSS licenses, as there are a larger variety of these types of licenses.
 
 As noted earlier, a primary use of license scanning is when checking inbound open source software to verify the license in use. This is often one of the first steps performed (after evaluation for fitness of technical purpose) before validating an open source component for use in your organization.
 
@@ -899,7 +900,7 @@ Even with the best pattern matching or utilization of machine-readable markers, 
 
 ![Binary Scanning](binary-scanning.png)
 
-The purpose of binary scanning is similar to source code scanning (identification of open source components and their versions), which can help with BOM creation, as well as identification of potential vulnerabilities for specific software packages coming into your organization.
+The purpose of binary scanning is similar to source code scanning (identification of open source components and their versions), which can help with SBOM creation, as well as identification of potential vulnerabilities for specific software packages coming into your organization.
 
 The challenge here, of course, is that without readable source code, binary scanning is a heuristic that relies on some characteristic elements of binaries, such as string variables, filenames and sometimes method and field names from languages with run-time code available (e.g. Java). Because hardware architectures and compilers can change over time, binary scanners have to be frequently adjusted to try and account for these changes.
 
@@ -911,7 +912,7 @@ There are also some cases where a reliable scan isn't fully available for a part
 
 DevOps integration using custom-built software and custom processes can be used to augment other previously mentioned scanning mechanisms and gain additional information from the processes used to build the software.
 
-Because the DevOps build system is able to determine dependencies during builds, it can combine that information with the output of other tools to help create a more robust BOM. This is especially true of development organizations that may have intricate dependencies, or legacy packages in their software that are unlikely to be identified correctly by commercial or open source scanning technologies.
+Because the DevOps build system is able to determine dependencies during builds, it can combine that information with the output of other tools to help create a more robust SBOM. This is especially true of development organizations that may have intricate dependencies, or legacy packages in their software that are unlikely to be identified correctly by commercial or open source scanning technologies.
 
 The one downside is that these custom configurations/systems do require effort to build and maintain, but if your organization already has a build system tied to a DevOps infrastructure, integrating outside scanning tools into this environment may be possible and may help alleviate a fair amount of manual review/compliance work.
 
@@ -919,7 +920,7 @@ The one downside is that these custom configurations/systems do require effort t
 
 ![Component Management](components.png)
 
-A handy compliance tool to help you bring together your various associated Bill of Materials (BOMs) and provide documentation and reporting is a Component Management System. There are various commercial vendors and some open source projects (search [github.com](https://github.com/)) that provide this kind of functionality.
+A handy compliance tool to help you bring together your various associated Software Bill of Materials (SBOMs) and provide documentation and reporting is a Component Management System. There are various commercial vendors and some open source projects (search [github.com](https://github.com/)) that provide this kind of functionality.
 
 Some organizations even choose to write this kind of database program for themselves, but the important thing is that it can help with a variety of things, including vulnerability management, approval of open source components, tracking of licenses, and identification of which open source components are used throughout all of the software in an organization.
 
@@ -947,7 +948,7 @@ The last point here is probably the most important in the context of our tooling
 
 ### OpenChain
 
-The [OpenChain Project](https://www.openchainproject.org/) is an industry standard for the key requirements of a quality open source compliance program. The project provides a specification and certification program regarding supply chain exchanges of source code, build scripts, license copies, attribution notices, modifications notices, SPDX data and other materials open source licenses governing a software deliverable may require.
+The [OpenChain Project](https://www.openchainproject.org/) ISO 5230 is the International Standard for the key requirements of a quality open source compliance program. The project provides a specification and certification program regarding supply chain exchanges of source code, build scripts, license copies, attribution notices, modifications notices, SPDX data and other materials open source licenses governing a software deliverable may require.
 
 Additionally, the project provides a set of curriculum, as well as a free [assessment tool](https://www.openchainproject.org/get-started/conformance) that can help your organization determine what areas can be improved to help your own open source compliance.
 
@@ -1001,6 +1002,8 @@ On the end side of the process, the primary output is a detailed open source sof
 
 - All open source software used as components, their origin and confirmed licenses
 - All open source snippets used in either proprietary or third-party software, their originating components, and confirmed licenses
+- All 3rd party software components and snippet without any license
+- (All 3rd party commercial software components and snippets)
 
 **Assessing the Scope of an Audit**
 
@@ -1114,7 +1117,7 @@ There may also be an opportunity to assist the acquisition with improved tooling
 
 Passing an open source compliance audit is not hard if you're prepared. However, it is very unlikely to happen if you begin preparing only once an acquirer shows interest. These activities are meant to go hand-in-hand with your daily business and development activities. The objective is to ensure the company tracks all open source components and respects open source license obligations resulting from use of open source components. These same measures can be of great help if your company becomes a target for a corporate transaction, as they minimize the risk of surprises.
 
-As you'll see in the next few pages, these practices are consistent with what we've learned to this point in this module.
+As you'll see in the next few chapters, these practices are consistent with what we've learned to this point in this module.
 
 **Know What's In Your Code**
 
